@@ -26,7 +26,7 @@
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`,`.csscomb.json`_
+`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`,`.csscomb.json`
 ---
 
 ![alt text](src/mockup/device-index.jpg)
