@@ -29,11 +29,11 @@ _Не удаляйте и не обращайте внимание на файл
 `.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`,`.csscomb.json`
 ---
 
-![alt text](src/mockup/device-index.jpg)
+![picture alt](src/mockup/device-index.jpg)
 <br>
 
 ---
-![alt text](src/mockup/device-catalog.jpg)
+![picture alt](src/mockup/device-catalog.jpg)
 <br>
 ---
 
