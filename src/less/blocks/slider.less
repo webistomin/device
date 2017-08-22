@@ -1,0 +1,90 @@
+.slider {
+  margin-top: -111px;
+  padding-left: 90px;
+  padding-right: 80px;
+
+  &__control {
+    display: none;
+  }
+
+  &__image {
+    position: relative;
+    width: 400px;
+    margin-right: 0;
+  }
+
+  &__page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--second,
+    &--third {
+      display: none;
+    }
+
+    &--first {
+
+    }
+  }
+
+  &__description {
+    width: 500px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    position: relative;
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 47px;
+    line-height: 54px;
+    font-family: Gilroy, serif;
+    font-weight: 800;
+    color: @text-color--second;
+
+    &::before {
+      content: "";
+      top: -45px;
+      left: 0;
+      position: absolute;
+      width: 100px;
+      height: 7px;
+      background-color: white;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 45px;
+  }
+
+  &__btn {
+    margin-bottom: 55px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__characteristics {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+  }
+
+  &__value {
+    font-size: 36px;
+    font-family: Gilroy, serif;
+    font-weight: 400;
+    color: @text-color--second;
+  }
+}
