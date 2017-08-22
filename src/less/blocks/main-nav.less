@@ -2,7 +2,7 @@
   &__user-list {
     display: flex;
     flex-direction: row;
-
+    margin-bottom: 20px;
     align-items: center;
   }
 
@@ -43,6 +43,15 @@
         height: 12px;
         background-image: url("../img/icon-user.svg");
         background-repeat: no-repeat;
+        cursor: pointer;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
       }
     }
 
@@ -59,6 +68,15 @@
         height: 12px;
         background-image: url("../img/icon-compare.svg");
         background-repeat: no-repeat;
+        cursor: pointer;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active{
+        opacity: 0.3;
       }
     }
 
@@ -76,6 +94,15 @@
         height: 12px;
         background-image: url("../img/icon-cart.svg");
         background-repeat: no-repeat;
+        cursor: pointer;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
       }
     }
 
@@ -85,6 +112,14 @@
       padding: 0;
       margin-bottom: 20px;
       margin-right: 20px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &--last {
@@ -105,11 +140,26 @@
       }
 
       &::after {
-
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        top: 18px;
+        right: 108px;
+        background-image: url("../img/plus.svg");
+        opacity: 0.3;
       }
 
       &:hover::before {
         display: block;
+      }
+
+      &:hover::after {
+        opacity: 0.2;
+      }
+
+      &:active::after {
+        opacity: 0.1;
       }
 
       &:hover > .main-nav__catalog {
@@ -133,6 +183,14 @@
       color: @text-color--second;
       text-transform: uppercase;
       letter-spacing: 0.2em;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &--zindex {
