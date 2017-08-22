@@ -2,22 +2,158 @@
   &__user-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
     align-items: center;
   }
 
   &__item {
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    line-height: 36px;
+    color: @text-color--second;
+
+    &--width {
+      width: 355px;
+      margin-right: 185px;
+    }
+
+    &--margin-r {
+      margin-right: 42px;
+    }
+
+    &--margin-l {
+      margin-left: auto;
+    }
+
+
     &--login {
       width: 280px;
       margin-left: auto;
+      padding-left: 26px;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        content: "";
+        width: 13px;
+        height: 12px;
+        background-image: url("../img/icon-user.svg");
+        background-repeat: no-repeat;
+      }
     }
 
     &--compare {
       width: 120px;
+      padding-left: 26px;
+
+      &::before {
+        position: absolute;
+        left: 7px;
+        top: 20px;
+        content: "";
+        width: 13px;
+        height: 12px;
+        background-image: url("../img/icon-compare.svg");
+        background-repeat: no-repeat;
+      }
     }
 
     &--cart {
       width: 100px;
+      padding-left: 26px;
+      text-align: right;
+
+      &::before {
+        position: absolute;
+        left: 17px;
+        top: 20px;
+        content: "";
+        width: 13px;
+        height: 12px;
+        background-image: url("../img/icon-cart.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--catalog {
+      width: 200px;
+      line-height: initial;
+      padding: 0;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    &--last {
+      margin-bottom: 50px;
+    }
+
+    &--hover {
+      position: relative;
+
+      &::before {
+        display: none;
+        position: absolute;
+        top: 37px;
+        content: "";
+        width: 1060px;
+        height: 140px;
+        z-index: 0;
+      }
+
+      &::after {
+
+      }
+
+      &:hover::before {
+        display: block;
+      }
+
+      &:hover > .main-nav__catalog {
+        visibility: visible;
+      }
+    }
+
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link {
+    &--big {
+      font-size: 18px;
+      font-family: Gilroy, serif;
+      font-weight: 800;
+      color: @text-color--second;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    &--zindex {
+      z-index: 2;
     }
   }
+
+  &__catalog {
+    position: absolute;
+    visibility: hidden;
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 130px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+
 }
