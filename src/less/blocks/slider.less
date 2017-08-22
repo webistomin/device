@@ -1,10 +1,30 @@
 .slider {
+  position: relative;
   margin-top: -111px;
   padding-left: 90px;
-  padding-right: 80px;
+  padding-right: 60px;
 
   &__control {
     display: none;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+    height: 10px;
+    position: absolute;
+    right: 82px;
+    top: 330px;
+  }
+
+  &__label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: grey;
   }
 
   &__image {
@@ -25,7 +45,18 @@
     }
 
     &--first {
-
+      &::before {
+        position: absolute;
+        top: -13px;
+        right: -10px;
+        content: "01";
+        font-family: Gilroy, serif;
+        font-size: 179px;
+        line-height: 179px;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        color: white;
+      }
     }
   }
 
