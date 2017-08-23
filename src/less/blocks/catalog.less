@@ -1,0 +1,74 @@
+.catalog {
+  margin-bottom: 175px;
+
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    width: 160px;
+  }
+
+  &__link {
+    &:hover .catalog__good {
+      background-color: #ffc600;
+    }
+
+    &:active .catalog__good {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__good {
+    width: 160px;
+    height: 160px;
+    background-color: @main-color;
+    margin-bottom: 36px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-color: #ffc600;
+    }
+
+    &--first {
+      background-image: url("../img/popular-1.svg");
+    }
+
+    &--second {
+      background-image: url("../img/popular-2.svg");
+      background-position: bottom;
+    }
+
+    &--third {
+      background-image: url("../img/popular-3.svg");
+    }
+
+    &--fourth {
+      background-image: url("../img/popular-4.svg");
+    }
+
+    &--fifth {
+      background-image: url("../img/popular-5.svg");
+    }
+
+    &--sixth {
+      background-image: url("../img/popular-6.svg");
+    }
+  }
+
+  &__good-name {
+    font-family: Gilroy, serif;
+    font-size: 19px;
+    line-height: 20px;
+    font-weight: 800;
+  }
+}
