@@ -1,0 +1,167 @@
+.page-footer {
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background-color: #444444;
+  color: white;
+
+  &__logo {
+    margin: 0;
+    margin-right: auto;
+    display: block;
+    font-size: 48px;
+    font-family: Gilroy, serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: @main-color;
+  }
+
+  &__link {
+    color: white;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 28px;
+
+    &--middle {
+      margin-bottom: 60px;
+    }
+
+    &--bottom {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    text-align: right;
+
+    &--width {
+      width: 120px;
+    }
+
+    &--login {
+      &::before {
+        position: absolute;
+        left: 54px;
+        top: 10px;
+        content: "";
+        width: 13px;
+        height: 12px;
+        background-image: url("../img/icon-user.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+
+    &--compare {
+      &::before {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        content: "";
+        width: 13px;
+        height: 12px;
+        background-image: url("../img/icon-compare.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+
+    &--cart {
+      &::before {
+        position: absolute;
+        left: 40px;
+        top: 10px;
+        content: "";
+        width: 13px;
+        height: 12px;
+        background-image: url("../img/icon-cart.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__wrapper {
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+
+    &--big {
+      width: 560px;
+      justify-content: space-around;
+    }
+
+    &--bottom {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__tel {
+    color: white;
+  }
+
+  &__decor {
+    align-self: center;
+    width: 80px;
+    height: 7px;
+    background-color: @main-color;
+  }
+
+  &__social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 160px;
+  }
+
+  &__social-link {
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border: 2px solid #7c7c7c;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--fb {
+      background-image: url("../img/icon-fb.svg");
+    }
+
+    &--insta {
+      background-image: url("../img/icon-insta.svg");
+    }
+
+    &--tw {
+      background-image: url("../img/icon-twitter.svg");
+    }
+  }
+
+  &__copyright {
+    width: 92px;
+    height: 36px;
+
+  }
+
+  &__copyright-link {
+    position: relative;
+    font-size: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: -90px;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/htmlacademy.svg");
+      background-size: 40px 40px;
+    }
+  }
+
+
+
+}
