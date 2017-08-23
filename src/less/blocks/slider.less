@@ -17,14 +17,40 @@
     position: absolute;
     right: 82px;
     top: 330px;
+    z-index: 10;
   }
+
+
 
   &__label {
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
+    border: 3px solid #b2b2b2;
     border-radius: 50%;
-    background: grey;
+    background: white;
+
+    &:hover {
+      border-color: #999999;
+    }
+  }
+
+  #slide-1:checked ~ &__controls &__label[for="slide-1"],
+  #slide-2:checked ~ &__controls &__label[for="slide-2"],
+  #slide-3:checked ~ &__controls &__label[for="slide-3"] {
+    border-color: #000000;
+  }
+
+  #slide-1:checked ~ &__page--first {
+    display: flex;
+  }
+
+  #slide-2:checked ~ &__page--second {
+    display: flex;
+  }
+
+  #slide-3:checked ~ &__page--third {
+    display: flex;
   }
 
   &__image {
@@ -35,14 +61,9 @@
 
   &__page {
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
-
-    &--second,
-    &--third {
-      display: none;
-    }
 
     &--first {
       &::before {
@@ -50,6 +71,36 @@
         top: -13px;
         right: -10px;
         content: "01";
+        font-family: Gilroy, serif;
+        font-size: 179px;
+        line-height: 179px;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        color: white;
+      }
+    }
+
+    &--second {
+      &::before {
+        position: absolute;
+        top: -13px;
+        right: -10px;
+        content: "02";
+        font-family: Gilroy, serif;
+        font-size: 179px;
+        line-height: 179px;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        color: white;
+      }
+    }
+
+    &--third {
+      &::before {
+        position: absolute;
+        top: -13px;
+        right: -10px;
+        content: "03";
         font-family: Gilroy, serif;
         font-size: 179px;
         line-height: 179px;
@@ -103,16 +154,16 @@
     max-width: 460px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   &__characteristics {
     display: flex;
     flex-wrap: wrap;
-    width: 100px;
+    width: 155px;
   }
 
   &__value {
+    width: 100%;
     font-size: 36px;
     font-family: Gilroy, serif;
     font-weight: 400;
