@@ -183,15 +183,17 @@
           </li>
         </ul>
       </section>
+    </div>
       <section class="features">
+        <div class="container">
         <div class="features__slider">
+          <input class="features__radio" type="radio" name="feature" id="feature-1" checked>
+          <input class="features__radio" type="radio" name="feature" id="feature-2">
+          <input class="features__radio" type="radio" name="feature" id="feature-3">
           <div class="features__slider-controls">
-            <input type="radio" name="feature" id="feature-1">
-            <label class="btn" for="feature-1">Доставка</label>
-            <input type="radio" name="feature" id="feature-2">
-            <label class="btn" for="feature-2">Гарантия</label>
-            <input type="radio" name="feature" id="feature-3">
-            <label class="btn" for="feature-3">Кредит</label>
+            <label class="btn features__btn" for="feature-1">Доставка</label>
+            <label class="btn features__btn" for="feature-2">Гарантия</label>
+            <label class="btn features__btn" for="feature-3">Кредит</label>
           </div>
           <div class="features__page features__page--first">
             <h1 class="features__heading">Доставка</h1>
@@ -206,6 +208,7 @@
             <p class="features__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
               условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
+        </div>
         </div>
       </section>
       <section class="partners">
@@ -279,7 +282,6 @@
       <div class="page-footer__copyright">
         <a href="#" class="page-footer__link">HTML Academy</a>
       </div>
-    </div>
   </footer>
 </body>
 </html>

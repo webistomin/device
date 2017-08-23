@@ -1,0 +1,84 @@
+.features {
+  min-height: 288px;
+  background-color: #e6e6e6;
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 47px;
+    line-height: 54px;
+    font-family: Gilroy,serif;
+    font-weight: 800;
+    color: #000;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    text-align: left;
+    z-index: 1;
+    margin-bottom: 24px;
+  }
+
+  &__page {
+    display: none;
+    margin-top: -29px;
+    width: 100%;
+    max-width: 700px;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  &__slider-controls {
+    position: relative;
+    margin-top: -20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -100px;
+      right: 0;
+      width: 7px;
+      height: 320px;
+      background-color: black;
+    }
+  }
+
+  #feature-1:checked ~ &__slider-controls &__btn[for="feature-1"],
+  #feature-2:checked ~ &__slider-controls &__btn[for="feature-2"],
+  #feature-3:checked ~ &__slider-controls &__btn[for="feature-3"] {
+    width: 278px;
+    background-color: #000000;
+    color: #ffe27f;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  #feature-1:checked ~ &__page--first {
+    display: block;
+    background-image: url("../img/icon-delivery.svg");
+  }
+
+  #feature-2:checked ~ &__page--second {
+    display: block;
+    background-image: url("../img/warranty.svg");
+  }
+
+  #feature-3:checked ~ &__page--third {
+    display: block;
+    background-image: url("../img/icon-credit.svg");
+  }
+
+  &__description {
+    width: 450px;
+  }
+}
