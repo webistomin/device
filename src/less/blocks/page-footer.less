@@ -5,14 +5,27 @@
   color: white;
 
   &__logo {
-    margin: 0;
     margin-right: auto;
     display: block;
+  }
+
+  &__logotype {
+    margin: 0;
     font-size: 48px;
     font-family: Gilroy, serif;
     font-weight: 800;
     text-transform: uppercase;
     color: @main-color;
+
+
+    &:hover {
+      color: #ffc600;
+    }
+
+    &:active {
+      color: #ffc600;
+      opacity: 0.3;
+    }
   }
 
   &__link {
@@ -127,6 +140,15 @@
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
 
     &--fb {
       background-image: url("../img/icon-fb.svg");
@@ -144,7 +166,6 @@
   &__copyright {
     width: 92px;
     height: 36px;
-
   }
 
   &__copyright-link {
@@ -159,9 +180,15 @@
       height: 40px;
       background-image: url("../img/htmlacademy.svg");
       background-size: 40px 40px;
+      opacity: 0.3;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &:active::before {
+      opacity: 0.1;
     }
   }
-
-
-
 }

@@ -23,7 +23,11 @@
   }
 
   &__btn {
-    text-align: left;
+    position: relative;
+    width: 160px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
     z-index: 1;
     margin-bottom: 24px;
   }
@@ -45,7 +49,7 @@
       position: absolute;
       content: "";
       top: -100px;
-      right: 0;
+      right: -118px;
       width: 7px;
       height: 320px;
       background-color: black;
@@ -55,12 +59,23 @@
   #feature-1:checked ~ &__slider-controls &__btn[for="feature-1"],
   #feature-2:checked ~ &__slider-controls &__btn[for="feature-2"],
   #feature-3:checked ~ &__slider-controls &__btn[for="feature-3"] {
-    width: 278px;
+    width: 160px;
     background-color: #000000;
     color: #ffe27f;
+    text-align: center;
 
     &::after {
       display: none;
+    }
+
+    &::before {
+      width: 118px;
+      height: 40px;
+      background-color: #000000;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -111px;
     }
   }
 
