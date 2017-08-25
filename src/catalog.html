@@ -71,7 +71,7 @@
     <h1 class="intro__heading">Моноподы для селфи</h1>
     <ul class="intro__breadcrumbs">
       <li class="intro__item"><a href="#" class="intro__link">Главная</a></li>
-      <li class="intro__item"><a href="#" class="intro__link">Каталог</a></li>
+      <li class="intro__item"><a href="#" class="intro__link">Каталог товаров</a></li>
       <li class="intro__item"><a href="#" class="intro__link intro__link--active">Моноподы для селфи</a></li>
     </ul>
   </section>
@@ -89,20 +89,25 @@
             <a class="tittles__link" href="#">По популярности</a>
           </div>
           <div class="tittles__sort-direction">
-            <a class="tittles__link tittles__link--up" href="#">up</a>
+            <a class="tittles__link tittles__link--up tittles__link--active" href="#">up</a>
             <a class="tittles__link tittles__link--down" href="#">down</a>
           </div>
         </div>
     </div>
   </section>
+  <div class="column__wrapper">
+    <div class="column__container">
   <section class="column column--left">
-    <div class="container">
-    <h2 class="column__heading">Фильтр:</h2>
     <form class="column__form">
       <div class="column__filter">
        <h3 class="column__caption">Стоимость</h3>
-        <input type="range" name="#" id="#">
-        <label for="#"></label>
+        <div class="column__range">
+          <div class="column__scale">
+            <div class="column__bar"></div>
+          </div>
+          <div class="column__toggle column__toggle--min"></div>
+          <div class="column__toggle column__toggle--max"></div>
+        </div>
       </div>
       <div class="column__checkboxes">
         <h3 class="column__caption">Цвет</h3>
@@ -126,7 +131,6 @@
       </div>
       <button class="btn" type="submit">Показать</button>
     </form>
-    </div>
   </section>
   <section class="column column--right">
     <div class="column__title">
@@ -189,6 +193,8 @@
       </ul>
     </div>
   </section>
+  </div>
+  </div>
 </main>
 <footer class="page-footer">
   <div class="container">
