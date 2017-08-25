@@ -37,6 +37,10 @@
     font-family: Gilroy, serif;
     font-weight: 800;
     color: black;
+
+    &--margin {
+      margin-bottom: 26px;
+    }
   }
 
   &__filter {
@@ -57,7 +61,7 @@
   &__range {
     position: relative;
     margin-top: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 62px;
   }
 
   &__scale {
@@ -126,6 +130,60 @@
         box-shadow: 0 5px 5px -3px rgba(0,0,0,0.75);
       }
     }
+  }
+
+  &__checkboxes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 16px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 200px;
+      height: 2px;
+      background-color: black;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+    font-size: 14px;
+    line-height: 40px;
+    color: black;
+    padding-left: 40px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 8px;
+      content: "";
+      width: 23px;
+      height: 23px;
+      background-color: #dcdcdc;
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      top: 17px;
+      left: 6px;
+      width: 12px;
+      height: 7px;
+      background-image: url("../img/icon-tick.svg");
+    }
+  }
+
+  &__checkbox:checked + &__label::after {
+    display: block;
   }
 
 
