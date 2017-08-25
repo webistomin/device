@@ -5,7 +5,7 @@
   }
 
   &__wrapper {
-    background: linear-gradient(to right, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 31%, rgba(255,255,255,1) 31%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 32%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
   }
 
   &--left {
@@ -15,7 +15,7 @@
     margin: 0;
     padding-left: 60px;
     padding-right: 68px;
-    padding-top: 84px;
+    padding-top: 86px;
   }
 
   &--right {
@@ -138,7 +138,7 @@
     flex-direction: column;
     position: relative;
     padding-top: 16px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     &::after {
       position: absolute;
@@ -246,11 +246,99 @@
   &__btn {
     z-index: 2;
     width: 200px;
-    position: relative;
     background-color: transparent;
     border: none;
     outline: none;
   }
 
+  &__catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+  }
 
+  &__catalog-item {
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 360px;
+    min-height: 438px;
+    margin-bottom: 24px;
+
+    &:nth-child(odd) {
+      margin-right: 40px;
+    }
+  }
+
+  &__catalog-photo {
+    vertical-align: top;
+  }
+
+  &__catalog-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__catalog-name {
+    font-size: 19px;
+    line-height: 20px;
+    font-family: Gilroy, serif;
+    font-weight: 800;
+    color: black;
+  }
+
+  &__catalog-price {
+    font-size: 16px;
+    line-height: 18px;
+    color: @text-color;
+    font-family: Gilroy, serif;
+    font-weight: 400;
+  }
+
+  &__pagination {
+    width: 760px;
+    background-color: #ebebeb;
+    margin-bottom: 74px;
+  }
+
+  &__pagination-list {
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__pagination-item {
+
+
+    &--first {
+      width: 94px;
+      margin-right: auto;
+    }
+
+    &--last {
+      margin-left: auto;
+    }
+  }
+
+  &__pagination-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 18px;
+    font-family: Gilroy,serif;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+    &--center {
+      width: 40px;
+    }
+  }
 }
