@@ -133,8 +133,9 @@
         display: none;
         position: absolute;
         top: 37px;
+        left: -60px;
         content: "";
-        width: 1050px;
+        width: 1160px;
         height: 145px;
         z-index: 2;
         background-color: @main-color;
@@ -194,9 +195,23 @@
       }
     }
 
+    &--active {
+      opacity: 0.3;
+    }
+
     &--zindex {
       z-index: 2;
     }
+  }
+
+  &__user {
+    margin-right: 15px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+
   }
 
   &__catalog {
