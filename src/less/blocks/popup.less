@@ -15,6 +15,22 @@
 
   &--show {
     display: block;
+    animation: bounce 0.5s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-1000px);
+    }
+    70% {
+      transform: translateY(30px);
+    }
+    90% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   &__form {
@@ -89,12 +105,18 @@
       border-color: #e5e5e5;
       background-color: white;
     }
+
+    &:invalid {
+      background-color: #ffdada;
+      border-color: #ffdada;
+    }
   }
 
   &__btn {
     z-index: 2;
     border: none;
     background-color: transparent;
+    outline: none;
   }
 
   &__close-btn {

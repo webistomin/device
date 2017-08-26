@@ -242,7 +242,9 @@
         <div class="info__column info__column--right">
           <h1 class="info__heading">Контакты</h1>
           <p class="info__description info__description--top-right">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="map"></div>
+          <a href="#" class="js-open-map">
+            <div class="map"></div>
+          </a>
           <a href="#" class="btn info__btn write-us">Напишите нам</a>
         </div>
         </div>
@@ -311,19 +313,23 @@
       <div class="popup__groups">
         <div class="popup__group">
         <label class="popup__label" for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" class="popup__input" placeholder="Представьте, пожалуйста">
+        <input type="text" name="name" id="name" class="popup__input" placeholder="Представьте, пожалуйста" required>
         </div>
         <div class="popup__group">
         <label class="popup__label" for="email">Ваше e-mail:</label>
-        <input type="email" name="email" id="email" class="popup__input" placeholder="Для отправки ответа">
+        <input type="email" name="email" id="email" class="popup__input" placeholder="Для отправки ответа" required>
         </div>
       </div>
       <label class="popup__label" for="textarea">Текст письма:</label>
-      <textarea name="text" id="textarea" cols="30" rows="10" class="popup__textarea" placeholder="В свободной форме"></textarea>
+      <textarea name="text" id="textarea" cols="30" rows="10" class="popup__textarea" placeholder="В свободной форме" required></textarea>
       <button class="popup__btn btn">Отправить</button>
     </form>
     <button type="button" class="popup__close-btn close-btn"></button>
   </div>
-<script src="js/popup.js"></script>
+  <div class="map-popup">
+    <iframe class="map-popup__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.5274293155983!3d55.68703098053578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1503746167084" width="960" height="560" frameborder="0" style="border:0"></iframe>
+    <button type="button" class="map-popup__close-btn close-btn"></button>
+  </div>
+<script src="js/script.min.js"></script>
 </body>
 </html>
