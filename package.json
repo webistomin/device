@@ -2,13 +2,13 @@
     "name": "mishka-adaptive",
     "version": "0.1.0",
     "private": true,
-    "description": "Личный проект «Мишка»",
+    "description": "Личный проект «Device»",
     "author": "Алексей Истомин",
     "repository": {
         "type": "git",
-        "url": "git@github.com:webistomin/mishka-adaptive.git"
+        "url": "git@github.com:webistomin/device.git"
     },
-    "homepage": "https://github.com/webistomin/mishka-adaptive",
+    "homepage": "https://github.com/webistomin/device",
     "devDependencies": {
         "@htmlacademy/editorconfig-cli": "1.0.0",
         "autoprefixer": "7.1.2",
